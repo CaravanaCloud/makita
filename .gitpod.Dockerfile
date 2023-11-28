@@ -5,6 +5,8 @@ RUN bash -c "sudo apt-get update"
 RUN bash -c "sudo pip install --upgrade pip"
 RUN bash -c "sudo install-packages gettext htop"
 
+# brew
+RUN bash -c "brew install terraform"
 
 # Java, Maven and Quarkus
 ARG JAVA_VERSION=21-amzn
